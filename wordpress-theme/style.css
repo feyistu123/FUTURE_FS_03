@@ -1,0 +1,99 @@
+/*
+Theme Name: ODAA Medium Clinic
+Theme URI: https://odaaclinic.com
+Author: ODAA Clinic Team
+Description: Custom WordPress theme for ODAA Medium Clinic - Compassionate Care | Advanced Medicine | Better Health
+Version: 1.0
+License: GPL v2 or later
+Text Domain: odaa-clinic
+*/
+
+/* ====== IMPORT MAIN STYLES ====== */
+/* Copy the entire style.css from the main CSS folder here */
+
+/* ====== WORDPRESS SPECIFIC ====== */
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 20px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 20px;
+}
+
+.wp-caption {
+    max-width: 100%;
+    background: #f7f7f7;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.wp-caption-text {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* ====== COMMENTS ====== */
+.comments-area {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #eee;
+}
+
+.comment-list {
+    list-style: none;
+    padding: 0;
+}
+
+.comment {
+    padding: 16px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.comment-meta {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.comment-content {
+    line-height: 1.6;
+}
+
+.reply {
+    margin-top: 10px;
+}
+
+.reply a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 100%;
+    padding: 10px 14px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+}
+
+.comment-form input[type="submit"] {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 50px;
+}

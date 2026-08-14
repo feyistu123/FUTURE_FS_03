@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - ODAA Medium Clinic</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header">
+    <div class="container">
+        <div class="header-top">
+            <div class="contact-info">
+                <a href="tel:+251911350573"><i class="fas fa-phone"></i> 0911 350 573</a>
+                <a href="mailto:dr.tadelemulisa@gmail.com"><i class="fas fa-envelope"></i> dr.tadelemulisa@gmail.com</a>
+                <span><i class="fas fa-clock"></i> Mon-Sun: 8:00 AM - 8:00 PM</span>
+            </div>
+            <div class="language-switcher">
+                <a href="#" class="active">EN</a>
+                <a href="#">አማ</a>
+                <a href="#">Af</a>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="ODAA Medium Clinic">
+                    <span>ODAA<span>Clinic</span></span>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Health Blog</a></li>
+                <li><a href="appointments.html" class="btn-appointment active">Book Appointment</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<!-- ===== PAGE HEADER ===== -->
+<section class="page-header">
+    <div class="container">
+        <h1>Book an Appointment</h1>
+        <p>Schedule your visit at ODAA Medium Clinic</p>
+    </div>
+</section>
+
+<!-- ===== APPOINTMENT SECTION ===== -->
+<section class="appointment-page">
+    <div class="container">
+        <div class="appointment-grid">
+            <!-- Appointment Form -->
+            <div class="appointment-form-box">
+                <h2>Patient Information</h2>
+                <p class="form-subtitle">Fill in the details below and we'll confirm your appointment.</p>
+                
+                <form id="appointmentForm" class="appointment-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName">Full Name <span class="required">*</span></label>
+                            <input type="text" id="fullName" placeholder="Your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber">Phone Number <span class="required">*</span></label>
+                            <input type="tel" id="phoneNumber" placeholder="Your phone number" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="emailAddress">Email Address</label>
+                            <input type="email" id="emailAddress" placeholder="Your email address">
+                        </div>
+                        <div class="form-group">
+                            <label for="ageGroup">Age Group <span class="required">*</span></label>
+                            <select id="ageGroup" required>
+                                <option value="">Select age group</option>
+                                <option value="child">Child (0-12)</option>
+                                <option value="teen">Teen (13-19)</option>
+                                <option value="adult">Adult (20-59)</option>
+                                <option value="senior">Senior (60+)</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="serviceType">Service Needed <span class="required">*</span></label>
+                        <select id="serviceType" required>
+                            <option value="">Select a service</option>
+                            <option value="general">General Consultation</option>
+                            <option value="emergency">Emergency Care</option>
+                            <option value="maternal">Maternal & Child Health</option>
+                            <option value="ultrasound">4D Ultrasound</option>
+                            <option value="laboratory">Laboratory Services</option>
+                            <option value="dermatology">Dermatology</option>
+                            <option value="circumcision">Male Circumcision</option>
+                            <option value="preventive">Preventive Health</option>
+                            <option value="checkup">Medical Check-up</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="preferredDate">Preferred Date <span class="required">*</span></label>
+                            <input type="date" id="preferredDate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="preferredTime">Preferred Time <span class="required">*</span></label>
+                            <select id="preferredTime" required>
+                                <option value="">Select time</option>
+                                <option value="8:00">8:00 AM</option>
+                                <option value="9:00">9:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                                <option value="17:00">5:00 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="additionalNotes">Additional Notes</label>
+                        <textarea id="additionalNotes" rows="4" placeholder="Any specific concerns or requirements..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Book Appointment <i class="fas fa-calendar-check"></i></button>
+                </form>
+                <div id="appointmentMessage" class="form-message"></div>
+            </div>
+            
+            <!-- Appointment Info -->
+            <div class="appointment-info">
+                <div class="info-card">
+                    <h3><i class="fas fa-clock"></i> Working Hours</h3>
+                    <ul>
+                        <li><span>Monday - Sunday</span> <span>8:00 AM - 8:00 PM</span></li>
+                        <li><span>Emergency</span> <span>24/7 Available</span></li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3><i class="fas fa-phone"></i> Contact Us</h3>
+                    <ul>
+                        <li><a href="tel:+251911350573">📞 0911 350 573</a></li>
+                        <li><a href="tel:+251113664663">📞 0113 664 663</a></li>
+                        <li><a href="mailto:dr.tadelemulisa@gmail.com">✉️ dr.tadelemulisa@gmail.com</a></li>
+                    </ul>
+                </div>
+                
+                <div class="info-card">
+                    <h3><i class="fas fa-map-marker-alt"></i> Location</h3>
+                    <p>Woliso Town, 02 Kebele (Ejersa)<br>Behind New Bus Station</p>
+                    <a href="contact.html#map" class="btn-secondary" style="margin-top:12px; display:inline-block; padding:8px 20px; font-size:0.9rem;">View on Map</a>
+                </div>
+                
+                <div class="info-card urgent">
+                    <h3><i class="fas fa-exclamation-triangle"></i> Emergency?</h3>
+                    <p>For medical emergencies, please call us immediately or visit our clinic.</p>
+                    <a href="tel:+251911350573" class="btn-primary" style="background:#E53E3E; border-color:#E53E3E; display:inline-block; margin-top:12px;">Call Emergency <i class="fas fa-phone"></i></a>
+                </div>
+                
+                <div class="info-card">
+                    <h3><i class="fas fa-check-circle"></i> What to Bring</h3>
+                    <ul>
+                        <li>✓ ID Card or Passport</li>
+                        <li>✓ Previous Medical Records (if any)</li>
+                        <li>✓ List of Current Medications</li>
+                        <li>✓ Insurance Card (if applicable)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="ODAA Medium Clinic">
+                    <span>ODAA<span>Clinic</span></span>
+                </div>
+                <p>Compassionate Care | Advanced Medicine | Better Health</p>
+                <p class="address"><i class="fas fa-map-marker-alt"></i> Woliso Town, 02 Kebele (Ejersa), Behind New Bus Station</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Health Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-services">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="services.html#general">General Medicine</a></li>
+                    <li><a href="services.html#maternal">Maternal & Child Health</a></li>
+                    <li><a href="services.html#ultrasound">4D Ultrasound</a></li>
+                    <li><a href="services.html#laboratory">Laboratory</a></li>
+                    <li><a href="services.html#dermatology">Dermatology</a></li>
+                    <li><a href="services.html#circumcision">Circumcision</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+251911350573">0911 350 573</a></li>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+251113664663">0113 664 663</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:dr.tadelemulisa@gmail.com">dr.tadelemulisa@gmail.com</a></li>
+                    <li><i class="fas fa-clock"></i> Mon-Sun: 8:00 AM - 8:00 PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ODAA Medium Clinic. All Rights Reserved.</p>
+            <p>Developed with <i class="fas fa-heart"></i> for the Woliso Community</p>
+        </div>
+    </div>
+</footer>
+
+<a href="https://wa.me/251911350573" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="js/main.js"></script>
+</body>
+</html>
