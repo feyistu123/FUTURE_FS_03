@@ -3017,3 +3017,35 @@ body {
         font-size: 0.75rem;
     }
 }
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 6px 0;
+        min-height: 44px;
+        max-width: 70%;
+    }
+
+    .logo img {
+        height: 28px;
+    }
+
+    .logo span {
+        font-size: 1rem;
+    }
+
+    .hamburger span {
+        width: 22px;
+        height: 2px;
+    }
+
+    .nav-menu a {
+        font-size: 1.1rem;
+        padding: 8px 0;
+        max-width: 70%;
+    }
+
+    .btn-appointment {
+        font-size: 1rem !important;
+        padding: 10px 25px !important;
+    }
+}
