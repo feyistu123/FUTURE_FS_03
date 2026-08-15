@@ -75,7 +75,7 @@ Search and replace in all HTML files:
 
 Phone: 0911 350 573 → Your number
 
-Email: dr.tadelemulisa@gmail.com → Your email
+Email: drtadelemulisa@gmail.com → Your email
 
 Address: Woliso Town → Your address
 
@@ -154,6 +154,8 @@ Phase 2 🚧 (Future)
 🔲 Telemedicine
 
 🔲 SMS reminders
+
+🔲 Multi-language support (EN, AM, OM)
 
 📊 Version History
 Version	Date	Changes
