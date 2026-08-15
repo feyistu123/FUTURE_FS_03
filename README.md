@@ -10,49 +10,7 @@ Phone	+251 911 350 573 / +251 113 664 663
 Email	drtadelemulisa@gmail.com
 Hours	Mon-Sun: 8:00 AM - 8:00 PM (24/7 Emergency)
 Director	Dr. Tadele Mulisa
-📁 Project Structure
-text
-oda-clinic-website/
-│
-├── 📄 index.html                 # Home Page
-├── 📄 about.html                 # About Us Page
-├── 📄 services.html              # Services Page
-├── 📄 blog.html                  # Health Education Blog
-├── 📄 appointments.html          # Appointment Booking Page
-├── 📄 contact.html               # Contact Page
-├── 📄 circumcision.html          # Circumcision Service Details
-├── 📄 malaria-guide.html         # Complicated Malaria Guide
-├── 📄 menopause-guide.html       # Post Menopause Guide
-│
-├── 📁 css/
-│   └── 📄 style.css              # Main Stylesheet
-│
-├── 📁 js/
-│   └── 📄 main.js                # JavaScript Functions
-│
-├── 📁 images/                    # Image Folder
-│   ├── 🖼️ logo.png
-│   ├── 🖼️ doctor.jpg
-│   ├── 🖼️ clinic.jpg
-│   ├── 🖼️ welcome.jpg
-│   ├── 🖼️ malaria1.jpg
-│   ├── 🖼️ malaria2.jpg
-│   ├── 🖼️ malaria3.jpg
-│   ├── 🖼️ menopause1.jpg
-│   ├── 🖼️ menopause2.jpg
-│   ├── 🖼️ menopause3.jpg
-│   ├── 🖼️ circumcision1.jpg
-│   ├── 🖼️ circumcision2.jpg
-│   └── 🖼️ circumcision3.jpg
-│
-├── 📁 wordpress-theme/           # WordPress Theme Files
-│   ├── 📄 style.css
-│   ├── 📄 index.php
-│   ├── 📄 header.php
-│   ├── 📄 footer.php
-│   ├── 📄 functions.php
-│
-└── 📄 README.md                  # This File
+
 🌐 Pages & Features
 Page	Description
 Home	Hero section, services overview, testimonials, statistics
@@ -95,14 +53,13 @@ Desktop	> 992px
 Tablet	768px - 992px
 Mobile	480px - 768px
 Small Mobile	< 480px
+
 🚀 Installation
-Option 1: Static HTML
-bash
 # 1. Clone or download the repository
 git clone https://github.com/feyistu123/FUTURE_FS_03.git
 
 # 2. Open in VS Code
-cd oda-clinic-website
+cd FUTURE_FS_03
 code .
 
 # 3. Update images in /images/ folder
@@ -110,17 +67,7 @@ code .
 # 4. Customize content (phone, email, address)
 
 # 5. Open index.html in browser
-Option 2: WordPress Theme
-bash
-# 1. Copy wordpress-theme folder to:
-/wp-content/themes/odaa-clinic/
 
-# 2. Activate in WordPress Admin
-Appearance → Themes → ODAA Medium Clinic → Activate
-
-# 3. Create pages: Home, About, Services, Blog, Contact
-
-# 4. Set Home as front page
 Settings → Reading → A static page → Home
 📝 Customization
 Update Contact Info
